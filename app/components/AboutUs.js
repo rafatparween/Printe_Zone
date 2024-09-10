@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <div className="py-16 px-4 md:px-8">
       <div className="text-center">
-        <p className="text-green-600 text-xl font-medium">About us</p>
+        <p className="text-green-600 text-xl font-medium font-dancing">About us</p>
         <h2 className="text-[42] md:text-5xl font-bold mt-2 ">
           We are here to make your product
           <br />
@@ -36,7 +36,7 @@ const AboutUs = () => {
             <img
               src="/dot.png"
               alt="Team working"
-              className='h-[100px] w-[33px]'
+              className='h-[100px] w-[33px] ml-[386px]'
             />
           </div>
         </div>

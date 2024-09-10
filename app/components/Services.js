@@ -65,7 +65,7 @@ const ServicesSection = () => {
   return (
     <section className="bg-black text-white py-16 px-4 md:px-8">
       <div className="text-center mb-12">
-        <p className="text-green-400 text-xl font-medium">Our Services</p>
+        <p className="text-green-400 text-xl font-medium font-dancing">Our Services</p>
         <h2 className="text-4xl md:text-5xl font-bold mt-2">What we do</h2>
       </div>
 
@@ -77,7 +77,7 @@ const ServicesSection = () => {
               service.highlight
                 ? 'bg-gradient-to bg-gray-800'
                 : 'bg-gray-800'
-            } hover:bg-gradient-to-r hover:from-teal-500 hover:to-blue-500`}
+            } hover:bg-gradient-to-r hover:from-customGreen hover:to-customBlue`}
           >
             <div className="absolute top-2 right-2">
               {/* <svg className="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">

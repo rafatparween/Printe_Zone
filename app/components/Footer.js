@@ -51,7 +51,7 @@ const Footer = () => {
         <div className="mb-6 md:mb-0 xl:ml-[300px] 2xl:ml-[300px]">
           <h2 className="text-xl font-bold mb-2 w-[438px] h-[28px] text-[24px]">About us</h2>
           <p className="text-sm max-w-sm w-[438px] h-[96px] text-[16px]">
-            Welcome to Printezone, where innovation is our driving force. Join us on a journey of growth and success as we help you elevate your digital presence and achieve dominance in your industry.
+            Welcome to Micro sonic, where innovation is our driving force. Join us on a journey of growth and success as we help you elevate your digital presence and achieve dominance in your industry.
           </p>
         </div>
 
@@ -76,7 +76,7 @@ const Footer = () => {
       </div>
       {/* Copyright Section */}
       <div className="text-center text-gray-400 mt-10 border-t border-gray-700 pt-6 ">
-        <p>© 2024 by Printezone. All rights reserved. | <a href="#" className="underline">Privacy Policy</a></p>
+        <p>© 2024 by Micro sonic. All rights reserved. | <a href="#" className="underline">Privacy Policy</a></p>
       </div>
     </footer>
   );
