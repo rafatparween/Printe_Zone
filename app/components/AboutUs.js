@@ -1,10 +1,10 @@
 import React from 'react';
 
 const AboutUs = () => {
-  return (
-    <div className="py-16 px-4 md:px-8">
+  return ( 
+    <div className="bg-gradient-to-br from-purple-900 via-blue-900 to-gray-900 text-white py-16 px-4 md:px-8">
       <div className="text-center">
-        <p className="text-green-600 text-xl font-medium font-dancing">About us</p>
+        <p className="text-xl font-dancing text-purple-300 font-medium ">About us</p>
         <h2 className="text-[42] md:text-5xl font-bold mt-2 ">
           We are here to make your product
           <br />
@@ -16,7 +16,7 @@ const AboutUs = () => {
       <div className="mt-10 flex flex-col md:flex-row justify-center items-center gap-10">
         {/* Image Container */}
         <div className="relative w-full md:w-1/2">
-          <div className="relative p-4 bg-[#3FA4D7] rounded-xl overflow-visible h-[400px] w-[550px] pl-8 pt-8 pr-0 ml-[300px]">
+          <div className="relative p-4 bg-gradient-to-br from-purple-800 via-blue-800 to-gray-800 rounded-xl overflow-hidden rounded-xl overflow-visible h-[400px] w-[550px] pl-8 pt-8 pr-0 ml-[300px]">
             <img
               src="/aboutus.jpg"
               alt="Team working"
@@ -43,7 +43,7 @@ const AboutUs = () => {
 
         {/* Text Content */}
         <div className="w-full md:w-1/2 text-left space-y-4">
-          <p className="text-gray-600 w-[564px] h-[72px]">
+          <p className="text-[white] w-[564px] h-[72px]">
             Kindling the energy hidden in matter the only home we’ve ever known radio telescope decipherment descended from astronomers rogue. Prime number network of wormholes take root.
           </p>
           <ul className="space-y-2">
@@ -53,7 +53,7 @@ const AboutUs = () => {
                   <span>✓</span>
                 </div>
               </div>
-              <p className="ml-2 text-gray-600">
+              <p className="ml-2 text-[white]">
                 Sea of Tranquility dispassionate observer dream.
               </p>
             </li>
@@ -63,7 +63,7 @@ const AboutUs = () => {
                   <span>✓</span>
                 </div>
               </div>
-              <p className="ml-2 text-gray-600">
+              <p className="ml-2 text-[white]">
                 Muse about as a patch of light brain is the seed of intelligence.
               </p>
             </li>
@@ -73,7 +73,7 @@ const AboutUs = () => {
                   <span>✓</span>
                 </div>
               </div>
-              <p className="ml-2 text-gray-600">
+              <p className="ml-2 text-[white]">
                 The only home we’ve ever known dream of the mind’s eye.
               </p>
             </li>
@@ -82,7 +82,7 @@ const AboutUs = () => {
       </div>
 
       {/* Statistics */}
-      <div className="mt-10 flex justify-center space-x-4 bg-[#3FA4D7] w-[734px] rounded-[20px] ml-[864px] mt-[-75px]">
+      <div className="mt-10 flex justify-center space-x-4 w-[734px] rounded-[20px] ml-[864px] mt-[-75px] bg-gradient-to-r from-purple-500 to-blue-500">
         <div className="flex flex-col items-center p-4  text-white rounded-lg ">
           <h3 className="text-3xl font-bold">150+</h3>
           <p>Project Delivered</p>
@@ -101,3 +101,7 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
+
+
+
+
