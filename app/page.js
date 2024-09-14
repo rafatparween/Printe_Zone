@@ -12,10 +12,10 @@ function Home(){
   return(
     <>
       <Navbar/>
-      <AboutUs/>
+      {/* <AboutUs/>
       <ServicesSection/>
-      <Faq/>
-      <Footer/>
+      <Faq/> */}
+      {/* <Footer/> */}
       
     </>
   )
