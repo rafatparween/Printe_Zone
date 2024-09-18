@@ -1,47 +1,88 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+'use client';
 
-import React from 'react';
+import Link from 'next/link';
+import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
-  return (
-    <footer className="bg-gradient-to-br from-purple-900 via-blue-900 to-gray-900 text-white py-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center h-[268px]">
-        
-        {/* About Us Section */}
-        <div className="mb-6 md:mb-0 xl:ml-[300px] 2xl:ml-[300px]">
-          <h2 className="text-xl font-bold mb-2 w-[438px] h-[28px] text-[24px]">About us</h2>
-          <p className="text-sm max-w-sm w-[438px] h-[96px] text-[20px]">
-            Welcome to Micro sonic, where innovation is our driving force. Join us on a journey of growth and success as we help you elevate your digital presence and achieve dominance in your industry.
-          </p>
-        </div>
+    return (
+        <footer className="text-white py-20 bg-gradient-to-br from-purple-900 via-blue-900 to-gray-900 h-[400px] pt-[14px]">
+            <div className="container mx-auto px-20 lg:px-20 py-20 flex flex-col gap-10 md:flex-row justify-between border-t border-slate-800">
+                <div className="flex">
+                    <p className="font-bold text-center">
+                        <h1 className="text-[32px] mt-[89px] font-bold text-purple-300 cursor-pointer">Micro-Sonic</h1>
+                    </p>
+                </div>
 
-        {/* Follow Us Section */}
-        <div>
-          <h2 className="text-xl font-bold mb-2 h-[28px] w-[360px] text-[24px] mb-[8px] ">Follow Us</h2>
-          <div className="flex space-x-4">
-            <a href="#" className="bg-gray-800 p-2 rounded-lg transition hover:bg-gradient-to-r hover:bg-gradient-to-br from-purple-800 via-blue-800 to-gray-800">
-              <FontAwesomeIcon icon={faFacebook} className="w-6 h-6" />
-            </a>
-            <a href="#" className="bg-gray-800 p-2 rounded-lg transition hover:bg-gradient-to-r hover:bg-gradient-to-br from-purple-800 via-blue-800 to-gray-800">
-              <FontAwesomeIcon icon={faInstagram} className="w-6 h-6" />
-            </a>
-            <a href="#" className="bg-gray-800 p-2 rounded-lg transition hover:bg-gradient-to-r hover:fbg-gradient-to-br from-purple-800 via-blue-800 to-gray-800">
-              <FontAwesomeIcon icon={faTwitter} className="w-6 h-6" />
-            </a>
-            <a href="#" className="bg-gray-800 p-2 rounded-lg transition hover:bg-gradient-to-r hover:fbg-gradient-to-br from-purple-800 via-blue-800 to-gray-800">
-              <FontAwesomeIcon icon={faLinkedin} className="w-6 h-6" />
-            </a>
-          </div>
-        </div>
-      </div>
-      {/* Copyright Section */}
-      <div className="text-center text-gray-400 mt-10 border-t border-gray-700 pt-6 ">
-        <p>© 2024 by Micro-Sonic. All rights reserved. | <a href="#" className="underline">Privacy Policy</a></p>
-      </div>
-    </footer>
-  );
+                <div>
+                    <p>Let us help</p>
+                    <div className="flex flex-col text-start mb-4 md:mb-0">
+                        {[
+                            { name: 'Home', path: '/' },
+                            { name: 'About us', path: '/about' },
+                            { name: 'Contact us', path: '/contact' },
+                            { name: 'Services', path: '/services' },
+                            { name: 'disclaimer', path: '/disclaimer' }
+                        ].map(({ name, path }) => (
+                            <Link
+                                key={name}
+                                href={path}
+                                className="block md:inline-block py-2 hover:text-gray-500"
+                            >
+                                {name}
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+
+                <div>
+                    <p>Our Policies</p>
+                    <div className="flex flex-col text-start mb-4 md:mb-0 text-[14px]">
+                        {[
+                            { name: 'Terms and Conditions', path: '/termsConditions' },
+                            { name: 'Privacy Policy', path: '/privacyPolicy' },
+                            { name: 'License Agreement', path: '/license-agreement' },
+                            { name: 'Copyright Information', path: '/copyright-information' },
+                            { name: 'Cookies Policy', path: '/cookies-policy' }
+                        ].map(({ name, path }) => (
+                            <Link
+                                key={name}
+                                href={path}
+                                className="block md:inline-block py-2 hover:text-gray-500"
+                            >
+                                {name}
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+
+                <div className="flex flex-col">
+                    <p className='text-[22px] text-[32px] font-bold text-purple-300 cursor-pointer '>SOCIAL MEDIA</p>
+                    <div className="flex mt-4 gap-3">
+                        {[
+                            { icon: FaFacebook, bgColor: 'bg-blue-600 hover:bg-gradient-to-r hover:bg-gradient-to-br from-purple-800 via-blue-800', link: '#' },
+                            { icon: FaInstagram, bgColor: 'bg-pink-600 hover:bg-gradient-to-r hover:bg-gradient-to-br from-purple-800 via-blue-800', link: '#' },
+                            { icon: FaTwitter, bgColor: 'bg-blue-600 hover:bg-gradient-to-r hover:bg-gradient-to-br from-purple-800 via-blue-800', link: '#' },
+                            { icon: FaYoutube, bgColor: 'bg-red-600 hover:bg-gradient-to-r hover:bg-gradient-to-br from-purple-800 via-blue-800', link: '#' }
+                        ].map(({ icon: Icon, bgColor, link }, index) => (
+                            <a
+                                key={index}
+                                href={link}
+                                className={`${bgColor} p-1.5 rounded-sm text-white hover:text-gray-500 hover:scale-110`}
+                            >
+                                <Icon size={26} />
+                            </a>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+            <div className="flex items-center justify-center py-10 mt-[-103px]">
+                <span className="text-gray-400 leading-10">© Copyright, All Rights Reserved by Micro-Sonic</span>
+            </div>
+        </footer>
+    );
 };
 
 export default Footer;
+
 
