@@ -60,9 +60,12 @@ const TypewriterEffect = () => {
 
 export default function Home() {
   return (
-    <div className="h-[720px] bg-gradient-to-br from-purple-900 via-blue-900 to-gray-900 text-white">
+    <div className="h-[900px] bg-gradient-to-br from-purple-900 via-blue-900 to-gray-900 text-white">
       <nav className="flex justify-between items-center p-8 bg-transparent">
-        <div className='text-[32px] font-bold text-purple-300 cursor-pointer'>Micro-Sonic</div>
+      <img src='sonic.png'
+        className='h-[123px] w-[181px] object-cover'
+      />
+        <div className='text-[32px] font-bold text-purple-300 cursor-pointer ml-[-420px]'>Micro-Sonic</div>
         <div className="flex space-x-6 text-white">
           <ScrollLink 
             to="home" 
@@ -116,7 +119,7 @@ export default function Home() {
       </nav>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto flex items-center mt-16 px-6">
+      <div className="max-w-7xl mx-auto flex items-center mt-16 px-6 mt-[-22px]">
         {/* Text Section */}
         <div id="home" className="w-1/2">
           <h1 className="text-[30px] font-semibold text-purple-300">Creative Digital Agency</h1>
