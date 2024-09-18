@@ -18,7 +18,7 @@ const Footer = () => {
                     <div className="flex flex-col text-start mb-4 md:mb-0">
                         {[
                             { name: 'Home', path: '/' },
-                            { name: 'About us', path: '/about' },
+                            { name: 'about', path: '/about' },
                             { name: 'Contact us', path: '/contact' },
                             { name: 'Services', path: '/services' },
                             { name: 'disclaimer', path: '/disclaimer' }
