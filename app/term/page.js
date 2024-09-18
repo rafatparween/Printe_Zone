@@ -2,7 +2,7 @@
 
 const Term = () => {
     return (
-        <div className="bg-gradient-to-br from-purple-900 via-blue-900 to-gray-900 text-white p-10">
+        <div className="bg-gradient-to-br from-purple-900 via-blue-900 to-gray-900 text-white p-10 h-[1800px]">
             {/* Title */}
             <h1 className="text-4xl font-bold mb-8">Terms and Conditions</h1>
 
