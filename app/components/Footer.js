@@ -19,9 +19,10 @@ const Footer = () => {
                         {[
                             { name: 'Home', path: '/' },
                             { name: 'about', path: '/about' },
-                            { name: 'Contact us', path: '/contact' },
-                            { name: 'Services', path: '/services' },
-                            { name: 'disclaimer', path: '/disclaimer' }
+                            { name: 'Contact', path: '/contact' },
+                            { name: 'Term', path: '/term' },
+                            { name: 'Disclaimer', path: '/disclaimer' },
+                            { name: 'Privacy', path: '/privacy' }
                         ].map(({ name, path }) => (
                             <Link
                                 key={name}
