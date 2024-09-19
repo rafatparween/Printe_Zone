@@ -20,7 +20,6 @@ const Footer = () => {
                             { name: 'Home', path: '/' },
                             { name: 'about', path: '/about' },
                             { name: 'Contact', path: '/contact' },
-                            { name: 'Term', path: '/term' },
                             { name: 'Disclaimer', path: '/disclaimer' },
                             { name: 'Privacy', path: '/privacy' }
                         ].map(({ name, path }) => (
@@ -37,9 +36,9 @@ const Footer = () => {
 
                 <div>
                     <p>Our Policies</p>
-                    <div className="flex flex-col text-start mb-4 md:mb-0 text-[14px]">
+                    <div className="flex flex-col text-start mb-4 md:mb-0 text-[18px]">
                         {[
-                            { name: 'Terms and Conditions', path: '/termsConditions' },
+                            { name: 'Terms and Conditions', path: '/term' },
                             { name: 'Privacy Policy', path: '/privacyPolicy' },
                             { name: 'License Agreement', path: '/license-agreement' },
                             { name: 'Copyright Information', path: '/copyright-information' },

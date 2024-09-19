@@ -13,10 +13,10 @@ const AboutUs = () => {
       </div>
 
       {/* Content Section */}
-      <div className="mt-10 flex flex-col md:flex-row justify-center items-center gap-10">
+      <div className="mt-10 flex flex-col md:flex-row justify-center items-center gap-10 xl:ml-[-264px]">
         {/* Image Container */}
         <div className="relative w-full md:w-1/2">
-          <div className="relative p-4 bg-gradient-to-br from-purple-800 via-blue-800 to-gray-800 rounded-xl overflow-hidden rounded-xl overflow-visible h-[400px] w-[550px] pl-8 pt-8 pr-0 ml-[300px]">
+          <div className="relative p-4 bg-gradient-to-br from-purple-800 via-blue-800 to-gray-800 rounded-xl overflow-hidden rounded-xl overflow-visible h-[400px] w-[550px] pl-8 pt-8 pr-0 ml-[300px] 2xl:ml-[419px]">
             <img
               src="/aboutus.jpg"
               alt="Team working"
@@ -36,7 +36,7 @@ const AboutUs = () => {
             <img
               src="/dot.png"
               alt="Team working"
-              className='h-[100px] w-[33px] ml-[386px]'
+              className='h-[100px] w-[33px] 2xl:ml-[513px]'
             />
           </div>
         </div>
@@ -82,7 +82,7 @@ const AboutUs = () => {
       </div>
 
       {/* Statistics */}
-      <div className="mt-10 flex justify-center space-x-4 w-[734px] rounded-[20px] ml-[864px] mt-[-75px] bg-gradient-to-r from-purple-500 to-blue-500">
+      <div className="mt-10 flex justify-center space-x-4 w-[734px] rounded-[20px] ml-[864px] mt-[-75px] bg-gradient-to-r from-purple-500 to-blue-500 xl:ml-[613px] 2xl:ml-[761px]">
         <div className="flex flex-col items-center p-4  text-white rounded-lg ">
           <h3 className="text-3xl font-bold">150+</h3>
           <p>Project Delivered</p>

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Disclaimer() {
   return (
-    <div className="h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-gray-900 overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-gray-900 overflow-hidden">
       <div className="absolute inset-0 flex flex-wrap items-center justify-center">
         {[...Array(50)].map((_, index) => (
           <div
@@ -17,7 +17,7 @@ export default function Disclaimer() {
           ></div>
         ))}
       </div>
-      <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md mt-20 z-10 relative mt-[221px]">
+      <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md mt-20 z-10 relative 2xl:mt-[221px]">
         <h1 className="mb-6 text-[32px] font-bold text-purple-500 cursor-pointer">Disclaimer</h1>
         <p className="text-gray-700 mb-6">
           If you require any more information or have any questions about our site’s disclaimer, please feel free to contact us by email at <a href="mailto:support@micro-sonic.com" className="text-blue-600">support@micro-sonic.com</a>.

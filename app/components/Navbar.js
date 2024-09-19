@@ -66,14 +66,14 @@ export default function Home() {
           <img src='sonic.png'
             className='h-[123px] w-[181px] object-cover'
           />
-          <div className='text-[32px] font-bold text-purple-300 cursor-pointer ml-[-420px]'>Micro-Sonic</div>
+          <div className='text-[32px] font-bold text-purple-300 cursor-pointer 2xl:ml-[-337px] xl:ml-[-159px] '>Micro-Sonic</div>
           <div className="flex space-x-6 text-white">
             <ScrollLink
               to="home"
               smooth={true}
               duration={500}
               offset={-70}
-              className="hover:text-purple-300 text-[18px] font-medium cursor-pointer"
+              className="hover:text-purple-300 text-[24px] font-medium cursor-pointer"
             >
               Home
             </ScrollLink>
@@ -82,7 +82,7 @@ export default function Home() {
               smooth={true}
               duration={500}
               offset={-70}
-              className="hover:text-purple-300 text-[18px] font-medium cursor-pointer"
+              className="hover:text-purple-300 text-[24px] font-medium cursor-pointer"
             >
               About Us
             </ScrollLink>
@@ -91,7 +91,7 @@ export default function Home() {
               smooth={true}
               duration={500}
               offset={-70}
-              className="hover:text-purple-300 text-[18px] font-medium cursor-pointer"
+              className="hover:text-purple-300 text-[24px] font-medium cursor-pointer"
             >
               Services
             </ScrollLink>
@@ -100,7 +100,7 @@ export default function Home() {
               smooth={true}
               duration={500}
               offset={-70}
-              className="hover:text-purple-300 text-[18px] font-medium cursor-pointer"
+              className="hover:text-purple-300 text-[24px] font-medium cursor-pointer"
             >
               Testimonials
             </ScrollLink>
@@ -109,7 +109,7 @@ export default function Home() {
               smooth={true}
               duration={500}
               offset={-70}
-              className="hover:text-purple-300 text-[18px] font-medium cursor-pointer"
+              className="hover:text-purple-300 text-[24px] font-medium cursor-pointer"
             >
               Contact Us
             </ScrollLink>
@@ -145,7 +145,7 @@ export default function Home() {
           </div>
         </div>
 
-        <section id="about-us" className="min-h-screen bg-gradient-to-r from-purple-700 to-gray-900 text-white py-20">
+        <section id="about-us" className="min-h-screen bg-gradient-to-r from-purple-700 to-gray-900 text-white py-20 ">
           <AboutUs />
         </section>
 

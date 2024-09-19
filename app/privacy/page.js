@@ -1,7 +1,7 @@
 export default function Privacy() {
   return (
     <div className="container mx-auto px-4 py-16  bg-gradient-to-br from-purple-900 via-blue-900 to-gray-900 text-white">
-      <h2 className="text-3xl font-bold text-white mb-8 text-center mt-[100px]">Privacy Policy</h2>
+      <h2 className="text-3xl font-bold text-white mb-8 text-center 2xl:mt-[-5px]">Privacy Policy</h2>
       <div className="space-y-8 text-white">
         
         <section>

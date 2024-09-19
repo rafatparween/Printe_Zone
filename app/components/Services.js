@@ -49,7 +49,7 @@ const ServicesSection = () => {
         <h2 className="text-4xl md:text-5xl font-bold mt-2">What we do</h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-0 justify-items-center ml-[212px] mr-[227px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-0 justify-items-center 2xl:ml-[212px] 2xl:mr-[227px]">
         {services.map((service, index) => (
           <div
             key={index}

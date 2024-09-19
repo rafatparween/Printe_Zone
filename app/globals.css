@@ -33,13 +33,6 @@ body {
 }
 
 
-body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden; /* Prevents scrollbars */
-  background-color: #37718e; /* Set your background color */
-}
-
 .stars {
   position: fixed;
   top: 0;
@@ -62,7 +55,7 @@ body {
     transform: translateY(-100%);
   }
   100% {
-    transform: translateY(100vh);
+    transform: translateY(20px);
   }
 }
 
@@ -94,7 +87,4 @@ body {
   }
 }
 
-.wave {
-  @apply absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-blue-500 to-transparent;
-  animation: wave 4s linear infinite;
-}
+
