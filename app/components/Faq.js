@@ -24,9 +24,11 @@ const FAQ = () => {
                 ></div>
               ))}
             </div> */}
-            <img
+            <Image
               src="/dot.png"
               alt="Team working"
+              width={33}
+              height={100}
               className='h-[100px] w-[33px] mb-[417px] ml-[586px]'
             />
           </div>

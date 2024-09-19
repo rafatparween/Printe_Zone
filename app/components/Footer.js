@@ -8,9 +8,9 @@ const Footer = () => {
         <footer className="text-white py-20 bg-gradient-to-br from-purple-900 via-blue-900 to-gray-900 h-[400px] pt-[14px]">
             <div className="container mx-auto px-20 lg:px-20 py-20 flex flex-col gap-10 md:flex-row justify-between border-t border-slate-800">
                 <div className="flex">
-                    <p className="font-bold text-center">
+                    <div className="font-bold text-center">
                         <h1 className="text-[32px] mt-[89px] font-bold text-purple-300 cursor-pointer">Micro-Sonic</h1>
-                    </p>
+                    </div>
                 </div>
 
                 <div>
