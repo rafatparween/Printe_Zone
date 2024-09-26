@@ -21,7 +21,7 @@ const Footer = () => {
                             { name: 'about', path: '/about' },
                             { name: 'Contact', path: '/contact' },
                             { name: 'Disclaimer', path: '/disclaimer' },
-                            { name: 'Privacy', path: '/privacy' }
+                            { name: 'Privacy Policy', path: '/privacy' }
                         ].map(({ name, path }) => (
                             <Link
                                 key={name}
@@ -35,7 +35,6 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    <p>Our Policies</p>
                     <div className="flex flex-col text-start mb-4 md:mb-0 text-[18px]">
                         {[
                             { name: 'Terms and Conditions', path: '/term' },
@@ -77,7 +76,7 @@ const Footer = () => {
             </div>
 
             <div className="flex items-center justify-center py-10 mt-[-103px]">
-                <span className="text-gray-400 leading-10">© Copyright, All Rights Reserved by Micro-Sonic</span>
+                <span className="text-gray-400 leading-10">© Copyright, All Rights Reserved by Printasist</span>
             </div>
         </footer>
     );
